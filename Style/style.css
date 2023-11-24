@@ -44,6 +44,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
 }
 
 
@@ -78,6 +79,7 @@ section{
     margin: 8rem 0;
 }
 .hero{
+    margin-top: 12rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -267,6 +269,16 @@ footer .container p{
 }
 
 @media (max-width:480px) {
-
+    .hero div img{
+        width: 40rem;
+    }
+    .hero .button{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .hero ul{
+        gap: 3rem;
+    }
 
 }
