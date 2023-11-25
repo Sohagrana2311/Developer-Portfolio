@@ -297,7 +297,7 @@ footer .container p{
         flex-direction: column;
         background-color: #222222;
         text-align: center;
-        transition: 1s;
+        transition: .21s;
     }
     .navBar ul.active{
         right: 0;
