@@ -11,6 +11,7 @@
     list-style: none;
     border: none;
     outline: none;
+    /* transition: all .4s; */
 }
 :root{
     --bg-header-color:#222222;
@@ -56,6 +57,7 @@ header{
 }
 .navBar .logo img{
     width: 100%;
+    cursor: pointer;
     
 }
 .navBar ul a{
@@ -133,29 +135,7 @@ section{
 }
 .hero .button{
    margin-top: 2rem;
-}
-
-.hero .button :nth-child(1){
-    background-color: white;
-    border: 1px solid white;
-    color: black;
-    transition: .4s;
-}
-.hero .button :nth-child(1):hover{
-    color: white;
-    background-color: transparent;
-}
-
-
-.hero .button :nth-child(2){
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    transition: .4s;
-}
-.hero .button :nth-child(2):hover{
-    color: black;
-    background-color: white;
+  
 }
 .hero .button button,
 .hero .button a{
@@ -164,8 +144,34 @@ section{
     border-radius: 4rem;
     margin: 0 1rem;
     font-weight: 500;
+    transition: .8s;
     
 }
+.hero .button .hero-btn{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    cursor: pointer;    
+}
+
+.hero .button .hero-btn:hover{
+    color: white;
+    background-color: black;
+}
+
+
+.hero .button .hero-btn-a{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    transition: .8s;
+}
+.hero .button .hero-btn-a:hover{
+    color: black;
+    background-color: white;
+}
+
 
 .hero h3{
     font-size: 2rem;
@@ -264,6 +270,9 @@ footer .container p{
     font-size: 1.4rem;
     margin-bottom: 4rem;
     color: gray;
+}
+footer .container p a{
+    color: var(--text-color);
 }
 .footer-icon{
     display: flex;
